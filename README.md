@@ -8,7 +8,7 @@ creating a Bot that was impossible to beat.
 
 ***
 
-#### My Sulotion 
+#### My solution 
 I've chosen to create a 8Bit theme Tic Tac Toe application. Where I use music and pictures to resonate with the user.
 The entirety of the application is written in Java. 
 I've also created a bot that is impossible to beat. I'm not using any popular algorithms in this case. I have rather made 
