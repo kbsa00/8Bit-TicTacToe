@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="no.woact.ahmkha16">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/khalidtictac"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/khalidtictac"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Activities.IntroActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activities.FrameActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"></activity>
+    </application>
+
+</manifest>

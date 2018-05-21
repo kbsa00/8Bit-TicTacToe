@@ -1,0 +1,239 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GameFragmenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamewallpaper"
+    tools:context="no.woact.ahmkha16.Fragments.FragmentsGame.GameFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/gamegreenmushroom"
+            android:layout_width="117dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/mushroomgreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/gameredmushroom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gameredmushroom"
+            android:layout_width="120dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/mushroomred"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playerOneNameHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/press_start_2p"
+            android:textAlignment="viewStart"
+            android:textColor="@color/playercolorname"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameredmushroom"
+            app:layout_constraintVertical_bias="0.272" />
+
+        <TextView
+            android:id="@+id/playerTwoNameHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/press_start_2p"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/player2colorname"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gamegreenmushroom"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <TextView
+            android:id="@+id/gameVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="@string/vstext"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playerTwoNameHeaderText"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/playerOneNameHeaderText" />
+    </android.support.constraint.ConstraintLayout>
+
+    <GridLayout
+        android:id="@+id/gameBoardLayout"
+        android:layout_width="327dp"
+        android:layout_height="301dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tttboard"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageButton
+            android:id="@+id/imagebtn0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:id="@+id/imagebtn1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imagebtn8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+    </GridLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@android:color/background_dark">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/timerImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/hours"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/press_start_2p"
+            android:text="00"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/timerImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TIC-TAC-TOE</string>
+    <string name="Intro_appNameTxt">TIC-TAC-TOE</string>
+    <string name="menyMainText">MAIN MENU</string>
+    <string name="menyGameModeText">GAME MODE</string>
+    <string name="menyPlayerVBotText">1 Player Mode</string>
+    <string name="menyPlayerVPlayerText">2 Player Mode</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="playbtn_txt">Play a Game</string>
+    <string name="highscoreBtn_txt">Highscores</string>
+    <string name="introBtn_text">Introduction</string>
+    <string name="PlayerVBot_txt">Player vs TTTBOT</string>
+    <string name="playervplayer_txt">Player vs Player</string>
+    <string name="HeadlinePlayerOne_txt">PLAYER ONE</string>
+    <string name="startGamebtn_txt">START GAME</string>
+    <string name="edittxthint_txt">Enter your name</string>
+    <string name="HeadlinePlayerTwo_txt">PLAYER TWO</string>
+    <string name="addplayer_txt">Add Player</string>
+    <string name="player_oneName">Player 1</string>
+    <string name="player_twoName">Player 2</string>
+    <string name="player_botsname">TTTBOT</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="pickStarter">PICK THE STARTER</string>
+    <string name="headerHighscoreTxt">HIGHSCORES</string>
+    <string name="HighScoreSubHeadertxt">Top 10 players</string>
+    <string name="btnFacebooktxt">Facebook</string>
+    <string name="restartbtn_text">Restart</string>
+    <string name="vstext">VS</string>
+    <string name="userexistAlerttxt">A player by this name already exist. Pick another name if you DO NOT wish to play with this player.</string>
+    <string name="introductiontext">Welcome to the 8 BIT Tic Tac Toe world! This is a simple Tic Tac Toe application with a fun 8 Bit theme wrapped around.
+    You have the oppourtinity of playing against our Bot or Play with a friend. Watch a video where we demonstrate the app for you! </string>
+    <string name="noticeheadertxtuseralert">NOTICE!</string>
+    <string name="okbtntextalertuser">OK</string>
+    <string name="API_KEY">"AIzaSyDGgJF4l31dZBTp0VXO2TIVCaHfzMMMS4A</string>
+    <string name="Youtube_Video">ap2i-HE4_M0</string>
+    <string name="quoteheadertxt">Quote Of The Day</string>
+
+</resources>

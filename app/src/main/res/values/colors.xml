@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menylayoutcolor">#69e2deda</color>
+    <color name="buttonColors">#c22b2d</color>
+    <color name="scoreboard">#00f4932b</color>
+    <color name="playercolorname">#b73335</color>
+    <color name="player2colorname">#2b873c</color>
+</resources>
